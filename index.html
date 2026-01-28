@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivara Capital - Fundusz Inwestycyjny w Nieruchomości Modułowe</title>
+    <title>Vivara Capital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,14 +29,14 @@
 
         /* Header */
         header {
-            background: #16163F;
-            color: white;
+            background: white;
+            color: #1a5f7a;
             padding: 1.2rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
         .header-content {
@@ -49,6 +49,7 @@
             font-size: 1.5rem;
             font-weight: 600;
             letter-spacing: 0.3px;
+            color: #1a5f7a;
         }
 
         .header-right {
@@ -64,7 +65,7 @@
         }
 
         nav a {
-            color: white;
+            color: #2c3e50;
             text-decoration: none;
             font-weight: 400;
             font-size: 0.95rem;
@@ -84,96 +85,89 @@
 
         .language-selector button {
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.3);
-            color: white;
+            border: 1px solid #ddd;
+            color: #2c3e50;
             padding: 0.4rem 0.9rem;
             cursor: pointer;
             font-size: 0.85rem;
             font-weight: 500;
             transition: all 0.3s;
             font-family: 'Poppins', sans-serif;
+            border-radius: 4px;
         }
 
         .language-selector button:hover {
-            background: rgba(110, 193, 228, 0.2);
+            background: rgba(110, 193, 228, 0.15);
             border-color: #6ec1e4;
         }
 
         .language-selector button.active {
             background: #6ec1e4;
             border-color: #6ec1e4;
+            color: white;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(22, 22, 63, 0.9) 0%, rgba(22, 22, 63, 0.85) 100%),
-                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover;
-            color: white;
-            padding: 180px 0 120px;
-            text-align: center;
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover;
+            color: #2c3e50;
+            padding: 160px 0 100px;
+            text-align: left;
             position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
         }
 
         .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 600px;
             position: relative;
             z-index: 2;
+            background: white;
+            padding: 3rem 2.5rem;
+            border-left: 3px solid #6ec1e4;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            color: white;
-            letter-spacing: -1.5px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1a5f7a;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
         }
 
         .hero .tagline {
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
-            font-weight: 300;
-            color: rgba(255,255,255,0.95);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            color: #6ec1e4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .hero .fund-intro {
-            font-size: 1.05rem;
-            max-width: 850px;
-            margin: 3rem auto;
-            line-height: 1.9;
-            color: white;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #4a5568;
             text-align: left;
-            padding: 3rem 3.5rem;
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border-left: 4px solid #6ec1e4;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
         }
 
         .hero .fund-intro strong {
-            color: white;
+            color: #1a5f7a;
             font-weight: 600;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #6ec1e4;
-            color: white;
-            padding: 1rem 3rem;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            margin-top: 2rem;
-            transition: background 0.3s, transform 0.2s;
-            letter-spacing: 0.3px;
-            box-shadow: 0 4px 15px rgba(110, 193, 228, 0.4);
-        }
-
-        .cta-button:hover {
-            background: #5ab0d0;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(110, 193, 228, 0.5);
         }
 
         /* Vision Section */
@@ -187,7 +181,7 @@
             text-align: center;
             font-size: 2.8rem;
             margin-bottom: 1rem;
-            color: #16163F;
+            color: #1a5f7a;
             font-weight: 600;
             letter-spacing: -0.5px;
             position: relative;
@@ -202,7 +196,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: linear-gradient(90deg, #6ec1e4, #16163F);
+            background: #6ec1e4;
         }
 
         .section-subtitle {
@@ -240,7 +234,7 @@
         .vision-card h3 {
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
-            color: #16163F;
+            color: #1a5f7a;
             font-weight: 600;
         }
 
@@ -268,63 +262,10 @@
             border-radius: 50%;
         }
 
-        /* Competitive Advantages */
+        /* SFDR Section */
         .advantages-section {
             padding: 100px 0;
-            background: linear-gradient(rgba(248,249,250,0.97), rgba(248,249,250,0.97)),
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80') center/cover fixed;
-        }
-
-        .advantages-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem;
-            margin-top: 4rem;
-        }
-
-        .advantage-card {
-            background: white;
-            padding: 3rem 2.5rem;
-            border-top: 3px solid #16163F;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        .advantage-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(110, 193, 228, 0.25);
-            border-top-color: #6ec1e4;
-        }
-
-        .advantage-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
-            color: #16163F;
-            font-weight: 600;
-        }
-
-        .advantage-card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .advantage-card li {
-            padding: 0.7rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: #4a5568;
-            line-height: 1.7;
-        }
-
-        .advantage-card li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 1.2rem;
-            width: 6px;
-            height: 6px;
-            background: #6ec1e4;
-            border-radius: 50%;
+            background: #f8f9fa;
         }
 
         /* Sustainability Section */
@@ -344,19 +285,20 @@
         .sustainability-card {
             background: white;
             padding: 3rem 2.5rem;
+            border-left: 3px solid #6ec1e4;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             transition: box-shadow 0.3s;
         }
 
         .sustainability-card:hover {
-            box-shadow: 0 8px 25px rgba(110, 193, 228, 0.2);
+            box-shadow: 0 8px 25px rgba(110, 193, 228, 0.25);
         }
 
         .sustainability-card h3 {
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
             margin-top: 2.5rem;
-            color: #16163F;
+            color: #1a5f7a;
             font-weight: 600;
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #6ec1e4;
@@ -392,9 +334,10 @@
 
         /* Footer */
         footer {
-            background: #16163F;
-            color: white;
+            background: #f8f9fa;
+            color: #2c3e50;
             padding: 4rem 0 2rem;
+            border-top: 1px solid #e9ecef;
         }
 
         .footer-content {
@@ -408,11 +351,12 @@
             margin-bottom: 1.5rem;
             font-size: 1.2rem;
             font-weight: 600;
+            color: #1a5f7a;
         }
 
         .footer-section p,
         .footer-section ul {
-            color: rgba(255,255,255,0.8);
+            color: #4a5568;
             line-height: 1.9;
             font-size: 0.95rem;
         }
@@ -428,15 +372,14 @@
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.6);
+            border-top: 1px solid #e9ecef;
+            color: #718096;
             font-size: 0.9rem;
         }
 
         /* Responsive */
         @media (max-width: 968px) {
-            .vision-grid,
-            .advantages-grid {
+            .vision-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -447,20 +390,29 @@
             }
 
             .hero {
-                padding: 140px 0 80px;
+                padding: 120px 0 60px;
+                min-height: auto;
+            }
+
+            .hero::before {
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .hero-content {
+                padding: 2rem;
+                max-width: 100%;
             }
 
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 1.5rem;
             }
 
             .hero .tagline {
-                font-size: 1.2rem;
+                font-size: 0.85rem;
             }
 
             .hero .fund-intro {
-                font-size: 1rem;
-                padding: 2rem;
+                font-size: 0.95rem;
             }
 
             nav ul {
@@ -476,8 +428,8 @@
             }
 
             .vision-section,
-            .advantages-section,
-            .sustainability-section {
+            .sustainability-section,
+            .advantages-section {
                 padding: 60px 0;
             }
         }
@@ -493,8 +445,8 @@
                     <nav>
                         <ul>
                             <li><a href="#vision" data-translate="nav-vision">Wizja</a></li>
-                            <li><a href="#advantages" data-translate="nav-advantages">Przewagi</a></li>
                             <li><a href="#sustainability" data-translate="nav-sustainability">Zrównoważony rozwój</a></li>
+                            <li><a href="#sfdr" data-translate="nav-sfdr">SFDR</a></li>
                             <li><a href="#contact" data-translate="nav-contact">Kontakt</a></li>
                         </ul>
                     </nav>
@@ -512,14 +464,11 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Vivara Capital</h1>
-                <p class="tagline" data-translate="hero-tagline">Budowanie nowej generacji przestrzeni turystycznych i mieszkalnych</p>
+                <h1>Vivara Capital sp. z o.o.</h1>
+                <p class="tagline" data-translate="hero-tagline">Zarządzający ASI</p>
                 <div class="fund-intro">
-                    <strong data-translate="hero-intro-strong">Przedstawiamy Vivara Fund I</strong><span data-translate="hero-intro-text">, wehikuł inwestycyjny skoncentrowany na modułowych nieruchomościach przeznaczonych na turystykę, wynajem krótkoterminowy i elastyczne mieszkanie w całej Europie.</span>
-                    <br><br>
-                    <span data-translate="hero-intro-text2">Wspierany przez zintegrowany ekosystem Vivara Group, Fundusz generuje wartość w całym cyklu: budowanie, eksploatacja i zwrot z modułowych inwestycji oraz destynacji wynajmu o wysokim popycie.</span>
+                    <span data-translate="hero-intro-text">Vivara Capital sp. z o.o. jest zarządzającym ASI, który zarządza zewnętrznie alternatywnymi spółkami inwestycyjnymi, w tym </span><strong data-translate="hero-intro-strong">Vivara Capital sp. z o.o. Fund I ASI SKA</strong><span data-translate="hero-intro-text2"> – skoncentrowaną na modułowych nieruchomościach przeznaczonych na turystykę, wynajem krótkoterminowy i elastyczne rozwiązania mieszkaniowe w całej Europie.</span>
                 </div>
-                <a href="#contact" class="cta-button" data-translate="cta-button">Dowiedz się więcej</a>
             </div>
         </div>
     </section>
@@ -534,7 +483,7 @@
                 <div class="vision-card">
                     <h3 data-translate="vision-card1-title">Rozwój i budowa parków modułowych</h3>
                     <ul>
-                        <li data-translate="vision-card1-li1">Tworzenie i obsługa sieci domów modułowych na gruntach należących do Funduszu lub partnerów</li>
+                        <li data-translate="vision-card1-li1">Tworzenie i obsługa sieci domów modułowych na gruntach należących do ASI lub partnerów</li>
                         <li data-translate="vision-card1-li2">Łączenie wzrostu wartości nieruchomości z wysokodochodowym wynajmem krótkoterminowym</li>
                     </ul>
                 </div>
@@ -566,54 +515,11 @@
         </div>
     </section>
 
-    <!-- Competitive Advantages Section -->
-    <section id="advantages" class="advantages-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="advantages-title">Przewagi konkurencyjne</h2>
-            <p class="section-subtitle" data-translate="advantages-subtitle">W Vivara łączymy siłę przemysłową, moc sprzedażową i inteligencję danych, aby dostarczać wysokowydajne inwestycje w modułowe nieruchomości od pozyskiwania do eksploatacji.</p>
-
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <h3 data-translate="adv-card1-title">Zintegrowana produkcja i łańcuch dostaw</h3>
-                    <ul>
-                        <li data-translate="adv-card1-li1">Bezpośredni dostęp do czołowych polskich fabryk modułowych (CLT / rama / SIP) zapewniający szybkość, jakość i kontrolę kosztów</li>
-                        <li data-translate="adv-card1-li2">Kontrolowana jakość, efektywność kosztowa i szybkie terminy budowy we wszystkich projektach</li>
-                        <li data-translate="adv-card1-li3">Skoordynowana logistyka i zdolność instalacyjna do szybkiego skalowania</li>
-                    </ul>
-                </div>
-
-                <div class="advantage-card">
-                    <h3 data-translate="adv-card2-title">Projektowanie i wycena oparte na danych</h3>
-                    <ul>
-                        <li data-translate="adv-card2-li1">AI do oceny lokalizacji, dynamicznego wyceniania i optymalizacji obłożenia/rentowności</li>
-                        <li data-translate="adv-card2-li2">Rozszerzający się katalog modułowy (BIM) umożliwiający szybką personalizację i efektywną kosztowo dostawę</li>
-                    </ul>
-                </div>
-
-                <div class="advantage-card">
-                    <h3 data-translate="adv-card3-title">Marketing i sprzedaż</h3>
-                    <ul>
-                        <li data-translate="adv-card3-li1">Skalowalny marketing online i sieć 35+ agentów generująca około 2000 leadów miesięcznie, konwertowana na 800 spotkań i 100-200 podpisanych projektów</li>
-                        <li data-translate="adv-card3-li2">Ponad 10 000 kontaktów z rynku nieruchomości zasilających działki poza rynkiem</li>
-                    </ul>
-                </div>
-
-                <div class="advantage-card">
-                    <h3 data-translate="adv-card4-title">Wsparcie prawne, finansowe i dotacje</h3>
-                    <ul>
-                        <li data-translate="adv-card4-li1">Sprawdzone ramy dla terenów budowlanych i niebudowlanych; usprawnione procesy zezwoleń i operacji</li>
-                        <li data-translate="adv-card4-li2">Silne operacje funduszu i wykorzystanie dotacji w celu poprawy ekonomiki projektu i redukcji nakładów kapitałowych</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sustainability & ESG Section -->
     <section id="sustainability" class="sustainability-section">
         <div class="container">
             <h2 class="section-title" data-translate="sustainability-title">Zaangażowanie w zrównoważony rozwój i ESG</h2>
-            <p class="section-subtitle" data-translate="sustainability-subtitle">Vivara Fund I - Odpowiedzialne inwestowanie w przyszłość zamieszkania</p>
+            <p class="section-subtitle" data-translate="sustainability-subtitle">Vivara Fund I ASI SKA - Odpowiedzialne inwestowanie w przyszłość zamieszkania</p>
 
             <div class="sustainability-grid">
                 <div class="sustainability-card">
@@ -652,15 +558,42 @@
         </div>
     </section>
 
+    <!-- SFDR Disclosures Section -->
+    <section id="sfdr" class="advantages-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="sfdr-title">Ujawnienia SFDR</h2>
+            <p class="section-subtitle" data-translate="sfdr-subtitle">Informacje zgodne z Rozporządzeniem SFDR (EU) 2019/2088</p>
+
+            <div class="sustainability-grid">
+                <div class="sustainability-card">
+                    <h3 data-translate="sfdr-card1-title">Klasyfikacja produktu</h3>
+                    <ul>
+                        <li data-translate="sfdr-card1-li1">Vivara Fund I ASI SKA jest alternatywnym funduszem inwestycyjnym (AFI) działającym w formie Alternatywnej Spółki Inwestycyjnej (ASI)</li>
+                        <li data-translate="sfdr-card1-li2">Produkt klasyfikowany zgodnie z art. 8 Rozporządzenia SFDR (promuje aspekty środowiskowe/społeczne)</li>
+                    </ul>
+                </div>
+
+                <div class="sustainability-card">
+                    <h3 data-translate="sfdr-card3-title">Ryzyka dla zrównoważonego rozwoju</h3>
+                    <ul>
+                        <li data-translate="sfdr-card3-li1">Inwestycje w ramach tego produktu finansowego nie uwzględniają unijnych kryteriów dotyczących zrównoważonej środowiskowo działalności gospodarczej w rozumieniu Taksonomii UE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Vivara Capital</h3>
-                    <p>Vivara Capital sp. z o.o.<br>
-                    Progi 1/lok.1<br>
+                    <p><span data-translate="footer-company-desc">Zarządzający ASI</span><br>
+                    Vivara Capital Sp. z o.o.<br>
+                    ul. Progi 1/1<br>
                     00-634 Warszawa, Poland<br>
+                    NIP: 7010823474<br>
                     KRS: 732530</p>
                 </div>
 
@@ -677,12 +610,16 @@
                 <div class="footer-section">
                     <h3 data-translate="footer-contact-title">Kontakt</h3>
                     <p data-translate="footer-contact-text">W sprawie zapytań inwestorskich i możliwości partnerskich, prosimy o kontakt z naszym zespołem.</p>
-                    <p style="margin-top: 1rem;"><a href="mailto:contact@vivaracapital.com" style="color: #6ec1e4; text-decoration: none;">contact@vivaracapital.com</a></p>
+                    <p style="margin-top: 1rem;">
+                        <a href="tel:+48225040720" style="color: #1a5f7a; text-decoration: none;">+48 22 504 07 20</a><br>
+                        <a href="mailto:biuro@vivaracapital.com" style="color: #1a5f7a; text-decoration: none;">biuro@vivaracapital.com</a>
+                    </p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Vivara Capital sp. z o.o. <span data-translate="footer-rights">Wszelkie prawa zastrzeżone.</span></p>
+                <p style="margin-bottom: 1rem; font-size: 0.85rem; color: #718096;" data-translate="footer-disclaimer">Informacje zamieszczone na stronie mają charakter wyłącznie informacyjny i nie stanowią oferty ani rekomendacji inwestycyjnej.</p>
+                <p>&copy; 2026 Vivara Capital Sp. z o.o. <span data-translate="footer-rights">Wszelkie prawa zastrzeżone.</span></p>
             </div>
         </div>
     </footer>
@@ -693,16 +630,17 @@
                 'nav-vision': 'Wizja',
                 'nav-advantages': 'Przewagi',
                 'nav-sustainability': 'Zrównoważony rozwój',
+                'nav-sfdr': 'SFDR',
                 'nav-contact': 'Kontakt',
-                'hero-tagline': 'Budowanie nowej generacji przestrzeni turystycznych i mieszkalnych',
-                'hero-intro-strong': 'Przedstawiamy Vivara Fund I',
-                'hero-intro-text': ', wehikuł inwestycyjny skoncentrowany na modułowych nieruchomościach przeznaczonych na turystykę, wynajem krótkoterminowy i elastyczne mieszkanie w całej Europie.',
-                'hero-intro-text2': 'Wspierany przez zintegrowany ekosystem Vivara Group, Fundusz generuje wartość w całym cyklu: budowanie, eksploatacja i zwrot z modułowych inwestycji oraz destynacji wynajmu o wysokim popycie.',
+                'hero-tagline': 'Zarządzający ASI',
+                'hero-intro-text': 'Vivara Capital sp. z o.o. jest zarządzającym ASI, który zarządza zewnętrznie alternatywnymi spółkami inwestycyjnymi, w tym ',
+                'hero-intro-strong': 'Vivara Capital sp. z o.o. Fund I ASI SKA',
+                'hero-intro-text2': ' – skoncentrowaną na modułowych nieruchomościach przeznaczonych na turystykę, wynajem krótkoterminowy i elastyczne rozwiązania mieszkaniowe w całej Europie.',
                 'cta-button': 'Dowiedz się więcej',
                 'vision-title': 'Wizja i cel',
                 'vision-subtitle': 'Budowanie nowej generacji przestrzeni turystycznych i mieszkalnych',
                 'vision-card1-title': 'Rozwój i budowa parków modułowych',
-                'vision-card1-li1': 'Tworzenie i obsługa sieci domów modułowych na gruntach należących do Funduszu lub partnerów',
+                'vision-card1-li1': 'Tworzenie i obsługa sieci domów modułowych na gruntach należących do ASI lub partnerów',
                 'vision-card1-li2': 'Łączenie wzrostu wartości nieruchomości z wysokodochodowym wynajmem krótkoterminowym',
                 'vision-card2-title': 'Optymalizacja wynajmu',
                 'vision-card2-li1': 'Wykorzystanie AI do analizy danych i inteligentnego doboru lokalizacji oraz dynamicznego wyceniania w celu maksymalizacji obłożenia i rentowności',
@@ -727,9 +665,9 @@
                 'adv-card3-li2': 'Ponad 10 000 kontaktów z rynku nieruchomości zasilających działki poza rynkiem',
                 'adv-card4-title': 'Wsparcie prawne, finansowe i dotacje',
                 'adv-card4-li1': 'Sprawdzone ramy dla terenów budowlanych i niebudowlanych; usprawnione procesy zezwoleń i operacji',
-                'adv-card4-li2': 'Silne operacje funduszu i wykorzystanie dotacji w celu poprawy ekonomiki projektu i redukcji nakładów kapitałowych',
+                'adv-card4-li2': 'Silne operacje ASI i wykorzystanie dotacji w celu poprawy ekonomiki projektu i redukcji nakładów kapitałowych',
                 'sustainability-title': 'Zaangażowanie w zrównoważony rozwój i ESG',
-                'sustainability-subtitle': 'Vivara Fund I - Odpowiedzialne inwestowanie w przyszłość zamieszkania',
+                'sustainability-subtitle': 'Vivara Fund I ASI SKA - Odpowiedzialne inwestowanie w przyszłość zamieszkania',
                 'sus-card1-title': 'Niskoemisyjna budowa',
                 'sus-card1-li1': 'Technologie modułowe i CLT redukujące wbudowany węgiel o do 40%',
                 'sus-card2-title': 'Efektywne użytkowanie gruntów',
@@ -744,6 +682,7 @@
                 'sus-card5-title': 'Zarządzanie i przejrzystość',
                 'sus-card5-li1': 'ESG zintegrowane w należytej staranności i monitorowaniu aktywów',
                 'sus-card5-li2': 'Regularne raportowanie zrównoważonego rozwoju w ramach SFDR Artykuł 8',
+                'footer-company-desc': 'Zarządzający ASI',
                 'footer-focus-title': 'Fokus inwestycyjny',
                 'footer-focus-li1': 'Nieruchomości modułowe',
                 'footer-focus-li2': 'Turystyka i wynajem krótkoterminowy',
@@ -751,22 +690,31 @@
                 'footer-focus-li4': 'Rynki europejskie',
                 'footer-contact-title': 'Kontakt',
                 'footer-contact-text': 'W sprawie zapytań inwestorskich i możliwości partnerskich, prosimy o kontakt z naszym zespołem.',
-                'footer-rights': 'Wszelkie prawa zastrzeżone.'
+                'footer-disclaimer': 'Informacje zamieszczone na stronie mają charakter wyłącznie informacyjny i nie stanowią oferty ani rekomendacji inwestycyjnej.',
+                'footer-rights': 'Wszelkie prawa zastrzeżone.',
+                'sfdr-title': 'Ujawnienia SFDR',
+                'sfdr-subtitle': 'Informacje zgodne z Rozporządzeniem SFDR (EU) 2019/2088',
+                'sfdr-card1-title': 'Klasyfikacja produktu',
+                'sfdr-card1-li1': 'Vivara Fund I ASI SKA jest alternatywnym funduszem inwestycyjnym (AFI) działającym w formie Alternatywnej Spółki Inwestycyjnej (ASI)',
+                'sfdr-card1-li2': 'Produkt klasyfikowany zgodnie z art. 8 Rozporządzenia SFDR (promuje aspekty środowiskowe/społeczne)',
+                'sfdr-card3-title': 'Ryzyka dla zrównoważonego rozwoju',
+                'sfdr-card3-li1': 'Inwestycje w ramach tego produktu finansowego nie uwzględniają unijnych kryteriów dotyczących zrównoważonej środowiskowo działalności gospodarczej w rozumieniu Taksonomii UE'
             },
             en: {
                 'nav-vision': 'Vision',
                 'nav-advantages': 'Advantages',
                 'nav-sustainability': 'Sustainability',
+                'nav-sfdr': 'SFDR',
                 'nav-contact': 'Contact',
-                'hero-tagline': 'Building the new generation of travel and living spaces',
-                'hero-intro-strong': 'Introducing Vivara Fund I',
-                'hero-intro-text': ', an investment vehicle focused on modular real estate for tourism, short-term rentals, and flexible living across Europe.',
-                'hero-intro-text2': 'Backed by the integrated ecosystem of Vivara Group, the Fund captures value across the full cycle: build, operate, and yield from modular developments and high-demand rental destinations.',
+                'hero-tagline': 'ASI Manager',
+                'hero-intro-text': 'Vivara Capital sp. z o.o. is an ASI manager that externally manages alternative investment companies, including ',
+                'hero-intro-strong': 'Vivara Capital sp. z o.o. Fund I ASI SKA',
+                'hero-intro-text2': ' – focused on modular real estate for tourism, short-term rentals, and flexible living solutions across Europe.',
                 'cta-button': 'Learn More',
                 'vision-title': 'Vision & Goal',
                 'vision-subtitle': 'Building the new generation of travel and living spaces',
                 'vision-card1-title': 'Develop & Build Modular Parks',
-                'vision-card1-li1': 'Create and operate a network of modular houses on Fund-owned or partner lands',
+                'vision-card1-li1': 'Create and operate a network of modular houses on ASI-owned or partner lands',
                 'vision-card1-li2': 'Combine real estate value growth with high-performing short-term rentals',
                 'vision-card2-title': 'Optimize Rental Performance',
                 'vision-card2-li1': 'Use AI to leverage data and provide intelligence on locations and dynamic pricing to maximize occupancy and yield',
@@ -791,9 +739,9 @@
                 'adv-card3-li2': '10,000+ real estate contacts feed off-market plots for sale',
                 'adv-card4-title': 'Legal, Financial & Grants Enablement',
                 'adv-card4-li1': 'Proven frameworks for constructible & non-constructible sites; streamlined permitting & operations',
-                'adv-card4-li2': 'Strong fund operations and grant leverage to improve project economics and reduce capex',
+                'adv-card4-li2': 'Strong ASI operations and grant leverage to improve project economics and reduce capex',
                 'sustainability-title': 'Sustainability & ESG Commitment',
-                'sustainability-subtitle': 'Vivara Fund I - Investing Responsibly in the Future of Living',
+                'sustainability-subtitle': 'Vivara Fund I ASI SKA - Investing Responsibly in the Future of Living',
                 'sus-card1-title': 'Low-Carbon Construction',
                 'sus-card1-li1': 'Modular and CLT technologies reducing embodied carbon by up to 40%',
                 'sus-card2-title': 'Efficient Land Use',
@@ -808,6 +756,7 @@
                 'sus-card5-title': 'Governance & Transparency',
                 'sus-card5-li1': 'ESG integrated in due diligence and asset monitoring',
                 'sus-card5-li2': 'Regular sustainability reporting under SFDR Article 8 framework',
+                'footer-company-desc': 'ASI Manager',
                 'footer-focus-title': 'Investment Focus',
                 'footer-focus-li1': 'Modular Real Estate',
                 'footer-focus-li2': 'Tourism & Short-Term Rentals',
@@ -815,22 +764,31 @@
                 'footer-focus-li4': 'European Markets',
                 'footer-contact-title': 'Contact',
                 'footer-contact-text': 'For investor inquiries and partnership opportunities, please reach out to our team.',
-                'footer-rights': 'All rights reserved.'
+                'footer-disclaimer': 'The information on this website is for informational purposes only and does not constitute an offer or investment recommendation.',
+                'footer-rights': 'All rights reserved.',
+                'sfdr-title': 'SFDR Disclosures',
+                'sfdr-subtitle': 'Information pursuant to SFDR Regulation (EU) 2019/2088',
+                'sfdr-card1-title': 'Product Classification',
+                'sfdr-card1-li1': 'Vivara Fund I ASI SKA is an alternative investment fund (AIF) operating as an Alternative Investment Company (ASI)',
+                'sfdr-card1-li2': 'Product classified under Article 8 of SFDR Regulation (promotes environmental/social characteristics)',
+                'sfdr-card3-title': 'Sustainability Risks',
+                'sfdr-card3-li1': 'Investments under this financial product do not take into account EU criteria for environmentally sustainable economic activities under EU Taxonomy'
             },
             fr: {
                 'nav-vision': 'Vision',
                 'nav-advantages': 'Avantages',
                 'nav-sustainability': 'Durabilité',
+                'nav-sfdr': 'SFDR',
                 'nav-contact': 'Contact',
-                'hero-tagline': 'Construire la nouvelle génération d\'espaces de voyage et de vie',
-                'hero-intro-strong': 'Présentation de Vivara Fund I',
-                'hero-intro-text': ', un véhicule d\'investissement axé sur l\'immobilier modulaire pour le tourisme, la location à court terme et la vie flexible à travers l\'Europe.',
-                'hero-intro-text2': 'Soutenu par l\'écosystème intégré de Vivara Group, le Fonds capture la valeur sur l\'ensemble du cycle : construire, exploiter et générer des revenus à partir de développements modulaires et de destinations de location à forte demande.',
+                'hero-tagline': 'Gestionnaire ASI',
+                'hero-intro-text': 'Vivara Capital sp. z o.o. est un gestionnaire d\'ASI qui gère de manière externe des sociétés d\'investissement alternatives, notamment ',
+                'hero-intro-strong': 'Vivara Capital sp. z o.o. Fund I ASI SKA',
+                'hero-intro-text2': ' – axée sur l\'immobilier modulaire pour le tourisme, la location à court terme et les solutions de vie flexibles à travers l\'Europe.',
                 'cta-button': 'En savoir plus',
                 'vision-title': 'Vision et objectif',
                 'vision-subtitle': 'Construire la nouvelle génération d\'espaces de voyage et de vie',
                 'vision-card1-title': 'Développer et construire des parcs modulaires',
-                'vision-card1-li1': 'Créer et exploiter un réseau de maisons modulaires sur des terrains appartenant au Fonds ou à des partenaires',
+                'vision-card1-li1': 'Créer et exploiter un réseau de maisons modulaires sur des terrains appartenant à l\'ASI ou à des partenaires',
                 'vision-card1-li2': 'Combiner la croissance de la valeur immobilière avec des locations à court terme performantes',
                 'vision-card2-title': 'Optimiser les performances locatives',
                 'vision-card2-li1': 'Utiliser l\'IA pour exploiter les données et fournir des informations sur les emplacements et la tarification dynamique afin de maximiser l\'occupation et le rendement',
@@ -855,9 +813,9 @@
                 'adv-card3-li2': 'Plus de 10 000 contacts immobiliers alimentant les parcelles hors marché à vendre',
                 'adv-card4-title': 'Soutien juridique, financier et subventions',
                 'adv-card4-li1': 'Cadres éprouvés pour les sites constructibles et non constructibles ; processus de permis et d\'opérations rationalisés',
-                'adv-card4-li2': 'Solides opérations de fonds et utilisation de subventions pour améliorer l\'économie du projet et réduire les dépenses en capital',
+                'adv-card4-li2': 'Solides opérations de l\'ASI et utilisation de subventions pour améliorer l\'économie du projet et réduire les dépenses en capital',
                 'sustainability-title': 'Engagement en matière de durabilité et ESG',
-                'sustainability-subtitle': 'Vivara Fund I - Investir de manière responsable dans l\'avenir de la vie',
+                'sustainability-subtitle': 'Vivara Fund I ASI SKA - Investir de manière responsable dans l\'avenir de la vie',
                 'sus-card1-title': 'Construction à faible empreinte carbone',
                 'sus-card1-li1': 'Technologies modulaires et CLT réduisant le carbone incorporé jusqu\'à 40%',
                 'sus-card2-title': 'Utilisation efficace des terres',
@@ -872,6 +830,7 @@
                 'sus-card5-title': 'Gouvernance et transparence',
                 'sus-card5-li1': 'ESG intégré dans la diligence raisonnable et le suivi des actifs',
                 'sus-card5-li2': 'Reporting régulier sur la durabilité dans le cadre du SFDR Article 8',
+                'footer-company-desc': 'Gestionnaire ASI',
                 'footer-focus-title': 'Focus d\'investissement',
                 'footer-focus-li1': 'Immobilier modulaire',
                 'footer-focus-li2': 'Tourisme et locations à court terme',
@@ -879,7 +838,15 @@
                 'footer-focus-li4': 'Marchés européens',
                 'footer-contact-title': 'Contact',
                 'footer-contact-text': 'Pour les demandes d\'investisseurs et les opportunités de partenariat, veuillez contacter notre équipe.',
-                'footer-rights': 'Tous droits réservés.'
+                'footer-disclaimer': 'Les informations sur ce site sont à titre informatif uniquement et ne constituent pas une offre ou une recommandation d\'investissement.',
+                'footer-rights': 'Tous droits réservés.',
+                'sfdr-title': 'Divulgations SFDR',
+                'sfdr-subtitle': 'Informations conformes au Règlement SFDR (UE) 2019/2088',
+                'sfdr-card1-title': 'Classification du produit',
+                'sfdr-card1-li1': 'Vivara Fund I ASI SKA est un fonds d\'investissement alternatif (FIA) opérant sous forme de Société d\'Investissement Alternative (ASI)',
+                'sfdr-card1-li2': 'Produit classé selon l\'article 8 du Règlement SFDR (promeut les caractéristiques environnementales/sociales)',
+                'sfdr-card3-title': 'Risques pour la durabilité',
+                'sfdr-card3-li1': 'Les investissements dans ce produit financier ne tiennent pas compte des critères de l\'UE concernant les activités économiques durables sur le plan environnemental au sens de la Taxonomie UE'
             }
         };
 
@@ -903,12 +870,7 @@
             });
 
             // Update document title
-            const titles = {
-                pl: 'Vivara Capital - Fundusz Inwestycyjny w Nieruchomości Modułowe',
-                en: 'Vivara Capital - Modular Real Estate Investment Fund',
-                fr: 'Vivara Capital - Fonds d\'investissement immobilier modulaire'
-            };
-            document.title = titles[lang];
+            document.title = 'Vivara Capital';
 
             // Update HTML lang attribute
             document.documentElement.lang = lang;
